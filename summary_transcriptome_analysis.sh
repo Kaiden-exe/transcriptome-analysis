@@ -55,8 +55,8 @@ for species in ${allSpecies[@]} ; do
 done
 
 echo -e "\n=========================" >> $summaryFile
-echo -e "# Amount of unannotated genes\n" >> $summaryFile
-echo -e "species\ttotal\tunannotated_genes" >> $summaryFile
+echo -e "# Amount of unannotated proteins\n" >> $summaryFile
+echo -e "species\ttotal\tunannotated_proteins" >> $summaryFile
 
 for species in ${allSpecies[@]} ; do
 	pepFile=$transdecoderOut/$species/${species}.Trinity-GG.fasta.transdecoder.pep
